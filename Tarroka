@@ -38,23 +38,23 @@ def cardselection():
          print('Your fifth card is: ' + cards[c3])
 #dictionary for high card meanings
 highdict = {
-    'Artifact': 'Represents the importance of some physical object that must be obtained, protected, or destroyed at all costs.',
-    'Beast': 'Represents great rage or passion; something bestial or malevolent hiding in plain sight or lurking just below the surface.', 
-    'Broken one': 'Represents defeat, failure, and despair; the loss of something or someone important, without which one feels incomplete.',
-    'Dark lord': 'Represents a single, powerful individual of an evil nature, one whose goals have enormous and far-reaching consequences.', 
-    'Donjon': 'Represents isolation and imprisonment; being so conservative in thinking as to be a prisoner of ones own beliefs.', 
-    'Ghost': 'Represents the looming past; the return of an old enemy or the discovery of a secret buried long ago.', 
-    'Executioner': 'Represents the imminent death of one rightly or wrongly convicted of a crime; false accusations and unjust prosecution.', 
-    'Horseman': 'Represents death; disaster in the form of the loss of wealth or property, a horrible defeat, or the end of a bloodline.', 
-    'Innocent': 'Represents a being of great importance whose life is in danger (who might be helpless or simply unaware of the peril).', 
-    'Marrionette': 'Represents the presence of a spy or a minion of some greater power; an encounter with a puppet or an underling.',
-    'Mists': 'Represents something unexpected or mysterious that cant be avoided; a great quest or journey that will try ones spirit.', 
-    'Raven': 'Represents a hidden source of information; a fortunate turn of events; a secret potential for good.', 
-    'Seer': 'Represents inspiration and keen intellect; a future event, the outcome of which will hinge on a clever mind.', 
-    'Tempter': 'Represents one who has been compromised or led astray by temptation or foolishness; one who tempts others for evil ends.'
+    'artifact': 'Represents the importance of some physical object that must be obtained, protected, or destroyed at all costs.',
+    'beast': 'Represents great rage or passion; something bestial or malevolent hiding in plain sight or lurking just below the surface.', 
+    'broken one': 'Represents defeat, failure, and despair; the loss of something or someone important, without which one feels incomplete.',
+    'dark lord': 'Represents a single, powerful individual of an evil nature, one whose goals have enormous and far-reaching consequences.', 
+    'donjon': 'Represents isolation and imprisonment; being so conservative in thinking as to be a prisoner of ones own beliefs.', 
+    'ghost': 'Represents the looming past; the return of an old enemy or the discovery of a secret buried long ago.', 
+    'executioner': 'Represents the imminent death of one rightly or wrongly convicted of a crime; false accusations and unjust prosecution.', 
+    'horseman': 'Represents death; disaster in the form of the loss of wealth or property, a horrible defeat, or the end of a bloodline.', 
+    'innocent': 'Represents a being of great importance whose life is in danger (who might be helpless or simply unaware of the peril).', 
+    'marrionette': 'Represents the presence of a spy or a minion of some greater power; an encounter with a puppet or an underling.',
+    'mists': 'Represents something unexpected or mysterious that cant be avoided; a great quest or journey that will try ones spirit.', 
+    'raven': 'Represents a hidden source of information; a fortunate turn of events; a secret potential for good.', 
+    'seer': 'Represents inspiration and keen intellect; a future event, the outcome of which will hinge on a clever mind.', 
+    'tempter': 'Represents one who has been compromised or led astray by temptation or foolishness; one who tempts others for evil ends.'
 }
 def wordsearch():
-    word = (input('Type word you want to find: '))
+    word = input('Type word you want to find: ')
     if word in highdict:
         print(highdict[word])
     else:
@@ -62,14 +62,14 @@ def wordsearch():
     
 
 print('Hello! Choose your option: 1 = card selection, 2 = word search, 3 = Exit')
-index = int((input('Enter your number: ')))
+index = int(input('Enter your number: '))
 while index != 3:
         if index == 1:
             cardselection()
-            index = int((input('Enter your number:  1 = card selection, 2 = word search, 3 = Exit ')))
+            index = int(input('Enter your number:  1 = card selection, 2 = word search, 3 = Exit '))
         elif index == 2:
             wordsearch()
-            index = int((input('Enter your number:  1 = card selection, 2 = word search, 3 = Exit ')))
+            index = int(input('Enter your number:  1 = card selection, 2 = word search, 3 = Exit '))
         else:
             print('That is not a valid number')
         
